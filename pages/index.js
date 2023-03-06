@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "./profile-image.png";
+import profile from "./my-profile.png";
 
 const validateEmail = (email) => {
   return String(email)
@@ -40,7 +40,7 @@ export default function Home() {
     let url =
       "https://" +
       (isMobileOrTablet() ? "api" : "web") +
-      ".whatsapp.com/send?phone=7291809186&text=" +
+      ".whatsapp.com/send?phone=7011429937&text=" +
       "*Name:* " +
       name +
       " *Email:* " +
@@ -53,8 +53,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Khalid Ali</title>
-        <meta name="description" content="Khalid Ali - Frontend Developer" />
+        <title>Aadil Ali</title>
+        <meta name="description" content="Aadil Ali - Frontend Developer" />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -95,7 +95,7 @@ export default function Home() {
               <div class="col-lg-7 col-12">
                 <div class="hero-text">
                   <div class="hero-title-wrap d-flex align-items-center mb-4">
-                    <h1 class="hero-title mb-0">Hi! I&#39;m Khalid Ali</h1>
+                    <h1 class="hero-title mb-0">Hi! I&#39;m Aadil Ali</h1>
                   </div>
 
                   <h2 class="mb-4">Frontend Developer</h2>
@@ -129,16 +129,17 @@ export default function Home() {
           <div class="container">
             <div class="row">
               <div class="col-lg-6 col-12 text-center">
-                <Image src="/images/about.jpg" class="about-image img-fluid" alt="" />
+                <img src="/images/myabout.png" class="about-image img-fluid" alt="" />
               </div>
 
               <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                 <div class="about-thumb">
                   <h3 class="pt-2 mb-3">A little bit about me</h3>
                   <p>
-                    I have worked with cross-functional teams to develop solutions that strike a
-                    balance between commercial goals and technical viability, including designers,
-                    product managers, and developers.
+                    I have gained experience working on a variety of projects, including building
+                    responsive websites and designing user interfaces. I have also developed strong
+                    problem-solving and teamwork skills. I have one year of experience as frontend
+                    developer, and i am pursuing my BCA from Manipal University Jaipur.
                   </p>
                   <p>
                     I constantly strive to learn and develop, both personally and professionally, by
@@ -163,27 +164,27 @@ export default function Home() {
                   <div class="profile-body">
                     <p>
                       <span class="profile-small-title">Name</span>
-                      <span>Khalid Ali</span>
+                      <span>Aadil Ali</span>
                     </p>
 
                     <p>
                       <span class="profile-small-title">Email</span>
                       <span>
-                        <a href="khalidist759@gmail.com">khalidist759@gmail.com</a>
+                        <a href="khalidist759@gmail.com">aadil1129ali@gmail.com</a>
                       </span>
                     </p>
                     <p>
                       <span class="profile-small-title">LinkedIn</span>
                       <span>
-                        <a href="https://www.linkedin.com/in/khalid-ali-58b225194/">
-                          khalid-ali-58b225194
+                        <a href="https://www.linkedin.com/in/aadil-ali-a66771237/">
+                          aadil-ali-a66771237
                         </a>
                       </span>
                     </p>
                     <p>
                       <span class="profile-small-title">Github</span>
                       <span>
-                        <a href="https://github.com/KaliJS">https://github.com/KaliJS</a>
+                        <a href="https://github.com/Aadil1129">https://github.com/Aadil1129</a>
                       </span>
                     </p>
                   </div>
@@ -204,10 +205,10 @@ export default function Home() {
                 <div class="skill-set">CSS</div>
                 <div class="skill-set">JavaScript</div>
                 <div class="skill-set">React Js</div>
+                <div class="skill-set">Next Js</div>
                 <div class="skill-set">Redux</div>
                 <div class="skill-set">Material UI</div>
-                <div class="skill-set">AWS</div>
-                <div class="skill-set">Gatsby Js</div>
+                <div class="skill-set">Firebase</div>
                 <div class="skill-set">Chart Js</div>
               </div>
             </div>
@@ -217,11 +218,11 @@ export default function Home() {
               </div>
 
               <div class="col-6">
-                <Image src="/images/kraftshala.jpg" class="clients-image img-fluid" alt="" />
+                <img src="/images/vhub.jpg" class="clients-image img-fluid" alt="" />
               </div>
 
               <div class="col-6">
-                <Image src="/images/expent.jpg" class="clients-image img-fluid" alt="" />
+                <img src="/images/gAngles.jpeg" class="clients-image img-fluid" alt="" />
               </div>
             </div>
           </div>
@@ -232,7 +233,7 @@ export default function Home() {
             <div class="row">
               <div class="col-lg-8 col-md-8 col-12 ms-auto">
                 <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
-                  <Image
+                  <img
                     src="/images/white-desk-work-study-aesthetics.jpg"
                     class="avatar-image img-fluid"
                     alt=""
@@ -247,13 +248,13 @@ export default function Home() {
               <div class="col-lg-4 col-md-6 col-12">
                 <div class="projects-thumb">
                   <div class="projects-info">
-                    <small class="projects-tag">Ecommerce</small>
+                    <small class="projects-tag">Online Examination</small>
 
-                    <h3 class="projects-title">818 Durian</h3>
+                    <h3 class="projects-title">Exam Sheet</h3>
                   </div>
 
-                  <a href="https://www.818-durian.com/" target="_blank" class="popup-image">
-                    <Image src="/images/durian.png" class="projects-image img-fluid" alt="" />
+                  <a href="https://exam-sheet.vercel.app/" target="_blank" class="popup-image">
+                    <img src="/images/examsheet.png" class="projects-image img-fluid" alt="" />
                   </a>
                 </div>
               </div>
@@ -261,27 +262,26 @@ export default function Home() {
               <div class="col-lg-4 col-md-6 col-12">
                 <div class="projects-thumb">
                   <div class="projects-info">
-                    <small class="projects-tag">Appointments Booking</small>
+                    <small class="projects-tag">Boomrang</small>
 
-                    <h3 class="projects-title">OBW Salon</h3>
+                    <h3 class="projects-title">Boomrang</h3>
                   </div>
 
-                  <a href="#" class="popup-image">
-                    <Image src="/images/salon.jpeg" class="projects-image img-fluid" alt="" />
+                  <a href="https://boomrang-model.vercel.app/" target="_blank" class="popup-image">
+                    <img src="/images/boomrang.png" class="projects-image img-fluid" alt="" />
                   </a>
                 </div>
               </div>
-
               <div class="col-lg-4 col-md-6 col-12">
                 <div class="projects-thumb">
                   <div class="projects-info">
-                    <small class="projects-tag">Finance Management</small>
+                    <small class="projects-tag">Bar Graph</small>
 
-                    <h3 class="projects-title">Bhartiya Finserv</h3>
+                    <h3 class="projects-title">Bar Graph</h3>
                   </div>
 
-                  <a href="#" class="popup-image">
-                    <Image src="/images/fin.jpeg" class="projects-image img-fluid" alt="" />
+                  <a href="https://react-bar-graph.vercel.app/" target="_blank" class="popup-image">
+                    <img src="/images/bargraph.png" class="projects-image img-fluid" alt="" />
                   </a>
                 </div>
               </div>
@@ -300,19 +300,19 @@ export default function Home() {
                 <div class="contact-info d-flex flex-column">
                   <strong class="site-footer-title d-block mb-3">Email</strong>
                   <p>
-                    <a href="mailto:khalidist759@gmail.com">khalidist759@gmail.com</a>
+                    <a href="mailto:aadil1129ali@gmail.com">aadil1129ali@gmail.com</a>
                   </p>
 
                   <strong class="site-footer-title d-block mt-3 mb-3">LinkedIn</strong>
                   <p class="mb-0">
-                    <a href="https://www.linkedin.com/in/khalid-ali-58b225194/">
-                      khalid-ali-58b225194
+                    <a href="https://www.linkedin.com/in/aadil-ali-a66771237/">
+                      aadil-ali-a66771237
                     </a>
                   </p>
 
                   <strong class="site-footer-title d-block mt-3 mb-3">Github</strong>
                   <p class="mb-0">
-                    <a href="https://github.com/KaliJS">https://github.com/KaliJS</a>
+                    <a href="https://github.com/Aadil1129">https://github.com/Aadil1129</a>
                   </p>
                 </div>
               </div>
